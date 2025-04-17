@@ -3,23 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abby - Portfolio</title>
+    <title>Abby | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    
     <header>
         <div class="container">
-            <h1 class="logo">AC</h1>
+            <div class="logo">A</div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -32,60 +38,55 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hello, I'm <span>Abby</span></h1>
-                    <p>Web Developer & Designer</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    </div>
+            <div class="hero-content glass-card">
+                <h4>Welcome to my world</h4>
+                <h1>Hi, I'm <span class="highlight">Abby</span></h1>
+                <p class="typed-text">I'm a <span id="typed"></span></p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
-                <div class="hero-shape"></div>
             </div>
         </div>
-        <div class="hero-scroll">
+        <div class="scroll-down">
             <a href="#about">
                 <div class="mouse">
                     <div class="wheel"></div>
                 </div>
-                <div>
-                    <span class="scroll-arrow">
-                        <span></span>
-                        <span></span>
-                    </span>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
                 </div>
             </a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="images/WhatsApp Image 2025-04-16 at 14.21.59_0f78ab47.jpg" alt="Abigail Chelah">
-                    <div class="about-img-bg"></div>
+                    <div class="img-container glass-card">
+                        <img src="images/WhatsApp Image 2025-04-16 at 14.21.59_0f78ab47.jpg" alt="Abby">
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h3>Web Developer</h3>
-                    <p>Hello! I'm Abigail Chelangat, a passionate web developer. I specialize in creating responsive and user-friendly websites.</p>
-                    <p>With a strong focus on clean code and modern design principles, I strive to build applications that not only look great but also provide an excellent user experience.</p>
-                   
+                <div class="about-text glass-card">
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate web developer. I specialize in creating beautiful, functional websites and applications that provide exceptional user experiences.</p>
+                    <p>With a keen eye for design and a love for clean code, I strive to build digital solutions that not only look great but also perform flawlessly.</p>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
+                
+                <div class="project-card glass-card">
                     <div class="project-img">
                         <img src="images/pexels-towfiqu-barbhuiya-3440682-11894045.jpg" alt="E-Product Rating System">
                         <div class="project-overlay">
@@ -106,8 +107,8 @@
                     </div>
                 </div>
                 
-                <!-- Project 2 -->
-                <div class="project-card">
+                
+                <div class="project-card glass-card">
                     <div class="project-img">
                         <img src="images/pexels-n-voitkevich-8927687.jpg" alt="Expense Tracker">
                         <div class="project-overlay">
@@ -131,53 +132,54 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technologies & Tools</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <i class="fab fa-html5"></i>
-                    <p>HTML5</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS3</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-js"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-git-alt"></i>
-                    <p>Git</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fab fa-github"></i>
-                    <p>GitHub</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-database"></i>
-                    <p>Databases</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Responsive Design</p>
-                </div>
-                <div class="skill-item">
-                    <i class="fas fa-server"></i>
-                    <p>API Integration</p>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container glass-card">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node-js"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <p>Databases</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Responsive</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="contact-info glass-card">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
@@ -189,7 +191,7 @@
                         <i class="fas fa-phone"></i>
                         <div>
                             <h3>Phone</h3>
-                            <p>0716918793</p>
+                            <p>+254716918793</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -200,13 +202,19 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Abby4cc" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abby-cheruiyot-53180b266/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/_abby_cc" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
+                    
                 </div>
-                <form class="contact-form">
+                <form class="contact-form glass-card">
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" required>
                     </div>
@@ -225,7 +233,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
